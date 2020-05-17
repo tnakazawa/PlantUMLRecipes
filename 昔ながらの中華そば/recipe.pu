@@ -1,0 +1,84 @@
+@startuml
+
+start
+
+split
+	partition 中華麺 {
+		:強力粉]
+		floating note left: 300g程度が作りやすい
+		:水]
+		floating note left: 強力粉の38%
+		:塩]
+		floating note left: 強力粉の1%
+		:かん水]
+		floating note left: 強力粉の1%
+		#add8e6:そぼろ状になるまでざっくりと混ぜる;
+		#add8e6:まとめて表面がなめらかになるまでこねる;
+		#add8e6:1時間、冷蔵庫で寝かす;
+		#add8e6:綿棒で伸ばし好みの幅に切る;
+	}
+split again
+	partition かえし {
+		:醤油]
+		floating note left: 2対
+		:酒]
+		floating note left: 1
+		:味の素]
+		floating note left: 少々
+		#add8e6:沸騰させて一晩寝かせる;
+	}
+split again
+	split
+		partition スープ {
+			split
+				:豚ゲンコツ]
+				floating note left: 300g程度で4人前
+				#add8e6:半分に折る;
+			split again
+				:青ネギの緑の部分]
+			split again
+				:生姜]
+				#add8e6:スライスする;
+			end split
+		}
+	split again
+		partition チャーシュー {
+			:豚肩ロース]
+			#add8e6:表面を焼く;
+		}
+	end split
+	:水]
+	floating note left: 一人前300ml+沸騰分
+	#add8e6:圧力鍋で高圧22分;
+	partition チャーシューたれ {
+		:かえし]
+		:水]
+	}
+	#add8e6:チャーシューをチャーシューたれに漬ける;
+split again
+	partition トッピング {
+		split
+			:卵]
+			#add8e6:沸騰してから7分茹でる;
+			#add8e6:冷水にとり殻をむく;
+			partition つけだれ {
+				:酒]
+				:醤油]
+				:みりん]
+			}
+			#add8e6:つけだれに漬ける;
+		split again
+			:ほうれん草]
+			#add8e6:茹でて水にさらし絞る;
+		split again
+			:青ネギ]
+			#add8e6:みじん切りにする;
+		end split
+	}
+end split
+#add8e6:麺を茹で、かえし、スープを入れトッピングをのせる;
+
+
+end
+
+@enduml
